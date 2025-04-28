@@ -18,11 +18,15 @@ class Person(object):
     def __init__(self, name):
         self.name = name
 
-
+"""
+hahahah
+"""
 def print_nametag(format_string, person):
     print(format_string.format(person=person))
 
-
+"""
+hahahah
+"""
 def fetch_website(urllib_version, url):
     # Import the requested version (2 or 3) of urllib
     exec(f"import urllib{urllib_version} as urllib", globals())
@@ -34,7 +38,9 @@ def fetch_website(urllib_version, url):
     except:
         print('Exception')
 
-
+"""
+hahahah
+"""
 def load_yaml(filename):
     stream = open(filename)
     deserialized_data = yaml.load(stream, Loader=yaml.Loader) #deserializing data
