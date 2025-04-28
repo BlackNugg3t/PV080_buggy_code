@@ -1,7 +1,7 @@
 import sys 
 import os
-import yaml
 import flask
+import yaml
 
 app = flask.Flask(__name__)
 
@@ -45,7 +45,10 @@ def load_yaml(filename):
     stream = open(filename)
     deserialized_data = yaml.load(stream, Loader=yaml.Loader) #deserializing data
     return deserialized_data
-    
+
+"""
+hahahah
+"""
 def authenticate(password):
     # Assert that the password is correct
     assert password == "Iloveyou", "Invalid password!"
